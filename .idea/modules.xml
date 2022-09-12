@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BTKjavaB.iml" filepath="$PROJECT_DIR$/BTKjavaB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BTKjava.iml" filepath="$PROJECT_DIR$/BTKjava.iml" />
     </modules>
   </component>
 </project>
