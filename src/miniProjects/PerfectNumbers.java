@@ -2,31 +2,26 @@ package miniProjects;
 
 import java.util.Scanner;
 
-public class IsNumberPrime {
+public class PerfectNumbers {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("What is your number : ");
+        System.out.print("Write your number : ");
         int num = scan.nextInt();
-        boolean isPrime = true;
+        int sum = 1;
 
         if (num < 1) {
             System.out.println("İnvalid number");
         } else if (num == 1) {
-            System.out.println("Your number isn't prime.");
+            System.out.println("Your number isn't perfect.");
         } else {
             for (int i = 2; i < num; i++) {
                 if (num % i == 0) {
-                    isPrime = false;
-                    break;
+                    sum += i;
                 }
-
             }
-
-            if (isPrime) {
-                System.out.println("Your number is prime.");
-            } else {
-                System.out.println("Your number isn't prime.");
-            }
+            if (num == sum) {
+                System.out.println("Your number is perfect");
+            } else System.out.println("Your number isn't perfect");
         }
     }
 }
