@@ -14,9 +14,14 @@ public class Vowels {
             case 'u':
                 System.out.println("bold vowel");
                 break;
-
-            default:
+            case 'e':
+            case 'i':
+            case 'ö':
+            case 'ü':
                 System.out.println("thin vowel");
+                break;
+            default:
+                System.out.println("invalid letter");
         }
     }
 }
